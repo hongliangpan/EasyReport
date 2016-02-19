@@ -162,7 +162,8 @@ ReportTemplate.renderFilterTable = function(result) {
 			html += rowChoose.join('、');
 			html += '</td></tr>';
 		}
-		else if (new RegExp('datebox').test($(this).find("input").attr("class"))) {
+		else if ($(this).find("input").attr("class").indexOf("datebox")!=-1) {
+			//if new RegExp('datebox').test($(this).find("input").attr("class"))
 			var label = $(this).find('label').text().replace(':', '');
 			var val = $(this).find("input").attr("value");
 			if(!val){

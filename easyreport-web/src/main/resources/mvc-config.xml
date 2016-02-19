@@ -9,7 +9,9 @@
 	<!-- Configures the @Controller programming model -->
 	<mvc:annotation-driven />
 	<mvc:view-controller path="/" view-name="index" />
-
+	<mvc:interceptors>
+		<bean class="com.easytoolsoft.easyreport.web.filter.SecurityInterceptor"></bean>
+	</mvc:interceptors>
 	<bean class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter">
 		<property name="messageConverters">
 			<util:list id="beanList">
