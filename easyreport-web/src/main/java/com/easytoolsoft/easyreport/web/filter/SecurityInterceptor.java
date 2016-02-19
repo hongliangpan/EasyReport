@@ -2,7 +2,6 @@ package com.easytoolsoft.easyreport.web.filter;
 
 import com.easytoolsoft.easyreport.web.util.ConfigUtils;
 import com.google.common.base.Strings;
-import com.google.common.io.Resources;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -13,10 +12,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 public class SecurityInterceptor implements HandlerInterceptor {
-    private static final Logger logger = LoggerFactory.getLogger(ConfigUtils.class);
-    public static final String USER_CHECK = "user.check";
-    public static final String USER = "user";
-    public static final String TOKEN = "token";
+    private static final String USER_CHECK = "user.check";
+    private static final String USER = "user";
+    private static final String TOKEN = "token";
 
     public static boolean isCheckUser() {
         String check = ConfigUtils.getValue(USER_CHECK);
