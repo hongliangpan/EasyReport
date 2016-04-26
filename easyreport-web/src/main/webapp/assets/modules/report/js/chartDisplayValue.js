@@ -353,8 +353,7 @@ ReportChart.getSeries = function (chartType) {
         series.push({
             name: legends[j].text,
             type: chartType,
-            data: []
-            /*,
+            data: [],
             // hongliangpan add
             itemStyle: {
                 normal: {
@@ -366,7 +365,7 @@ ReportChart.getSeries = function (chartType) {
                         }
                     }
                 }
-            }*/
+            }
         });
 
     }
