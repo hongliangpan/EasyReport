@@ -354,19 +354,6 @@ ReportChart.getSeries = function (chartType) {
             name: legends[j].text,
             type: chartType,
             data: []
-            /*,
-            // hongliangpan add
-            itemStyle: {
-                normal: {
-                    label: {
-                        show: true,
-                        position: 'top',
-                        textStyle: {
-                            color: '#800080'
-                        }
-                    }
-                }
-            }*/
         });
 
     }
